@@ -31,7 +31,7 @@ header h2 {
   display: flex;
   flex-direction: column;
   position: fixed;
-  width: 70px;
+  width: 95px;
   height: 32px;
   gap: 2px;
 }
@@ -48,7 +48,7 @@ header h2 {
 #tv-guide-grid {
   display: grid;
   overflow-x: scroll;
-  margin-left: 80px;
+  margin-left: 105px;
 }
 
 #tv-guide-grid::-webkit-scrollbar {
