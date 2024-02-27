@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--black, rgb(91, 86, 86));
+  color: var(--white, #f5f5f7);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header h2 {
+  text-align: center;
+  font-family: "Fuse V.2 Display";
+  margin-top: 16px;
+  font-size: 90px;
+  font-weight: 800;
+  line-height: 120px;
+  letter-spacing: -2.44px;
+  color: #9c9696;
+}
+
+#tv-guide {
+  margin-top: 60px;
+  margin-left: 15px;
+  display: flex;
+}
+
+#tv-guide-program-names {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 70px;
+  height: 32px;
+  gap: 2px;
+}
+
+#tv-guide-program-names h2 {
+  font-family: "Fuse V.2 Display";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -0.74px;
+  text-transform: uppercase;
+}
+
+#tv-guide-grid {
+  display: grid;
+  overflow-x: scroll;
+  margin-left: 80px;
+}
+
+#tv-guide-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.tv-guide-grid-row {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  background-color: #9c9696;
+}
+
+.tv-guide-grid-row div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  background-color: #9c9696;
+  border: 1px solid rgb(91, 86, 86);
+}
+
+.show-title {
+  background-color: #9c9696;
+  font-family: "Fuse V.2 Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.14px;
+}
+
+@media screen and (max-width: 1000px) {
+}
