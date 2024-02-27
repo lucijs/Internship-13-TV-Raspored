@@ -33,6 +33,7 @@ header h2 {
   width: 95px;
   height: 32px;
   gap: 2px;
+  align-items: center;
 }
 
 #tv-guide-program-names h2 {
@@ -82,17 +83,127 @@ header h2 {
 
 #line {
   position: absolute;
-  left: 200px;
   top: 1px;
   width: 3px;
-  height: 254px;
+  height: 255px;
   z-index: 999;
   background: #df4f97;
 }
 
 #time-line {
+  position: relative;
+  display: flex;
   margin-top: 60px;
 }
 
+#time-line div {
+  position: absolute;
+  top: -22px;
+}
+
+button {
+  height: 44px;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  padding: 14px, 32px, 14px, 32px;
+  border: 1px;
+  align-items: center;
+  line-height: 16px;
+  font-weight: 800;
+  gap: 10px;
+  text-transform: uppercase;
+  font-family: "Fuse V.2 Display";
+  letter-spacing: 0.08em;
+  padding: 14px 32px;
+  font-style: normal;
+  border-style: solid;
+  border-image-source: linear-gradient(
+    125deg,
+    #0d8ed3 5.44%,
+    #0b60bb 17.95%,
+    #0a3aa7 36.44%,
+    #6a387d 69.53%,
+    #c53754 105.59%,
+    #fa5240 117.57%
+  );
+  border-image-slice: 1;
+  border-color: transparent;
+}
+
+button:hover {
+  border-width: 1px;
+  border-style: solid;
+  border-image-source: linear-gradient(
+    94.69deg,
+    #37f3e1 -5.42%,
+    #a109ff 117.51%
+  );
+  background-color: var(--white);
+  color: var(--black);
+  border-image-slice: 1;
+  border-image-repeat: stretch;
+  border-color: transparent;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+}
+
 @media screen and (max-width: 1000px) {
+  #tv-guide-program-names {
+    flex-direction: row;
+    gap: 6px;
+    position: fixed;
+    top: 120px;
+    width: 100vw;
+    z-index: 999;
+  }
+
+  #tv-guide-program-names h2 {
+    font-size: 16px;
+  }
+
+  #tv-guide-grid {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-left: 0px;
+    margin-top: 30px;
+    gap: 7px;
+  }
+
+  .tv-guide-grid-row {
+    height: fit-content;
+    flex-direction: column;
+  }
+
+  .tv-guide-grid-row div {
+    display: flex;
+    width: 36px;
+  }
+
+  .show-title {
+    font-size: 6px;
+    justify-self: center;
+  }
+
+  #line {
+    display: none;
+  }
+
+  #time-line {
+    display: none;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 999;
+  }
+
+  header h2 {
+    font-size: 60px;
+  }
 }

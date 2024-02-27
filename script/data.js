@@ -6,7 +6,7 @@ export const data = {
         {
           id: 100,
           name: "Nema informacija",
-          startTime: new Date().setHours(1),
+          startTime: new Date().setHours(1, 0),
           endTime: new Date().setHours(18, 17),
           category: "nema informacija",
         },
@@ -14,7 +14,7 @@ export const data = {
           id: 1,
           name: "Potjera",
           startTime: new Date().setHours(18, 17),
-          endTime: new Date().setHours(19),
+          endTime: new Date().setHours(19, 0),
           description:
             "U 'Potjeri' četiri natjecatelja odgovaraju na pitanja općeg znanja i istovremeno grade taktiku koja će ih dovesti do finalnog kruga. Međutim, na putu im stoji Lovac. Taj će (ne)uobičajeni protivnik u uzbudljivoj igri znanja i brzine pokušati natjecatelje, jednog po jednog, izbaciti iz igre i onemogućiti ih da osvoje desetke tisuća kuna.",
           category: "zabavan program",
@@ -25,7 +25,7 @@ export const data = {
         {
           id: 2,
           name: "Dnevnik 2",
-          startTime: new Date().setHours(19),
+          startTime: new Date().setHours(19, 0),
           endTime: new Date().setHours(20, 19),
           description:
             "Najvažnije vijesti iz zemlje i svijeta, brojne reportaže, gostovanja istaknutih stručnjaka i komentatora u Dnevniku 2, u najgledanijoj informativnoj emisiji HTV-a. Uz sportske aktualnosti pogledajte i detaljnu vremensku prognozu za sljedeće dane.",
@@ -138,7 +138,7 @@ export const data = {
           id: 100,
           name: "Nema informacija",
           startTime: new Date().setHours(27, 30),
-          endTime: new Date().setHours(29, 5),
+          endTime: new Date().setHours(45, 0),
           category: "nema informacija",
         },
       ],
@@ -149,7 +149,7 @@ export const data = {
         {
           id: 100,
           name: "Nema informacija",
-          startTime: new Date().setHours(1),
+          startTime: new Date().setHours(1, 0),
           endTime: new Date().setHours(17, 14),
           category: "nema informacija",
         },
@@ -269,7 +269,7 @@ export const data = {
           id: 20,
           name: "Art a la carte",
           startTime: new Date().setHours(26, 17),
-          endTime: new Date().setHours(26, 48),
+          endTime: new Date().setHours(26, 54),
           description:
             "Više od pukog kulturnog pregleda! Od ponedjeljka do četvrtka, pola sata, uživo pratimo kulturne događaje i fenomene iz likovne umjetnosti, klasične glazbe, književnosti, kazališta, plesa, arhitekture i dizajna, popularne glazbe, filma. Problematizira.",
           category: "informativan program",
@@ -280,8 +280,8 @@ export const data = {
         {
           id: 100,
           name: "Nema informacija",
-          startTime: new Date().setHours(26, 48),
-          endTime: new Date().setHours(29, 5),
+          startTime: new Date().setHours(26, 54),
+          endTime: new Date().setHours(45, 0),
           category: "nema informacija",
         },
       ],
@@ -292,7 +292,7 @@ export const data = {
         {
           id: 100,
           name: "Nema informacija",
-          startTime: new Date().setHours(1),
+          startTime: new Date().setHours(1, 0),
           endTime: new Date().setHours(17, 34),
           category: "nema informacija",
         },
@@ -423,6 +423,13 @@ export const data = {
           score: undefined,
           img: "https://mojtv.hr/thumb.ashx?path=/images/fbb8891b-2d47-4dd2-b017-c7806eea057e.jpg&w=163&h=80",
         },
+        {
+          id: 100,
+          name: "Nema informacija",
+          startTime: new Date().setHours(29, 5),
+          endTime: new Date().setHours(45, 0),
+          category: "nema informacija",
+        },
       ],
     },
     {
@@ -431,7 +438,7 @@ export const data = {
         {
           id: 100,
           name: "Nema informacija",
-          startTime: new Date().setHours(1),
+          startTime: new Date().setHours(1, 0),
           endTime: new Date().setHours(17, 5),
           category: "nema informacija",
         },
@@ -501,7 +508,7 @@ export const data = {
           id: 36,
           name: "RTL Direkt",
           startTime: new Date().setHours(22, 22),
-          endTime: new Date().setHours(23),
+          endTime: new Date().setHours(23, 0),
           description:
             "Od ponedjeljka do četvrtka u večernjem terminu Mojmira Pastorčić najvažnije dnevne događaje donosi direktno i sa stavom. RTL Direkt je prisutan svugdje i izvještava o svemu, s vama i za vas – naše gledatelje.",
           category: "informativan program",
@@ -512,7 +519,7 @@ export const data = {
         {
           id: 37,
           name: "Tightrope (1984)",
-          startTime: new Date().setHours(23),
+          startTime: new Date().setHours(23, 0),
           endTime: new Date().setHours(25, 1),
           description:
             "Policijski detektiv koji živi kao samohrani otac hvata serijskog ubojicu prostitutki.",
@@ -567,7 +574,7 @@ export const data = {
           id: 100,
           name: "Nema informacija",
           startTime: new Date().setHours(27, 25),
-          endTime: new Date().setHours(29, 5),
+          endTime: new Date().setHours(45, 0),
           category: "nema informacija",
         },
       ],
@@ -578,7 +585,7 @@ export const data = {
         {
           id: 100,
           name: "Nema informacija",
-          startTime: new Date().setHours(1),
+          startTime: new Date().setHours(1, 0),
           endTime: new Date().setHours(18, 17),
           category: "nema informacija",
         },
@@ -586,7 +593,7 @@ export const data = {
           id: 41,
           name: "Potjera",
           startTime: new Date().setHours(18, 17),
-          endTime: new Date().setHours(19),
+          endTime: new Date().setHours(19, 0),
           description:
             "U 'Potjeri' četiri natjecatelja odgovaraju na pitanja općeg znanja i istovremeno grade taktiku koja će ih dovesti do finalnog kruga. Međutim, na putu im stoji Lovac. Taj će (ne)uobičajeni protivnik u uzbudljivoj igri znanja i brzine pokušati natjecatelje, jednog po jednog, izbaciti iz igre i onemogućiti ih da osvoje desetke tisuća kuna.",
           category: "zabavan program",
@@ -597,7 +604,7 @@ export const data = {
         {
           id: 42,
           name: "Dnevnik 2",
-          startTime: new Date().setHours(19),
+          startTime: new Date().setHours(19, 0),
           endTime: new Date().setHours(20, 22),
           description:
             "Najvažnije vijesti iz zemlje i svijeta, brojne reportaže, gostovanja istaknutih stručnjaka i komentatora u Dnevniku 2, u najgledanijoj informativnoj emisiji HTV-a. Uz sportske aktualnosti pogledajte i detaljnu vremensku prognozu za sljedeće dane.",
@@ -710,7 +717,7 @@ export const data = {
           id: 100,
           name: "Nema informacija",
           startTime: new Date().setHours(27, 30),
-          endTime: new Date().setHours(29, 5),
+          endTime: new Date().setHours(45, 0),
           category: "nema informacija",
         },
       ],
@@ -721,7 +728,7 @@ export const data = {
         {
           id: 100,
           name: "Nema informacija",
-          startTime: new Date().setHours(1),
+          startTime: new Date().setHours(1, 0),
           endTime: new Date().setHours(17, 14),
           category: "nema informacija",
         },
@@ -841,7 +848,7 @@ export const data = {
           id: 60,
           name: "Art a la carte",
           startTime: new Date().setHours(26, 17),
-          endTime: new Date().setHours(26, 48),
+          endTime: new Date().setHours(26, 59),
           description:
             "Više od pukog kulturnog pregleda! Od ponedjeljka do četvrtka, pola sata, uživo pratimo kulturne događaje i fenomene iz likovne umjetnosti, klasične glazbe, književnosti, kazališta, plesa, arhitekture i dizajna, popularne glazbe, filma. Problematizira.",
           category: "informativan program",
@@ -852,8 +859,8 @@ export const data = {
         {
           id: 100,
           name: "Nema informacija",
-          startTime: new Date().setHours(26, 48),
-          endTime: new Date().setHours(29, 5),
+          startTime: new Date().setHours(26, 59),
+          endTime: new Date().setHours(45, 0),
           category: "nema informacija",
         },
       ],
@@ -864,7 +871,7 @@ export const data = {
         {
           id: 100,
           name: "Nema informacija",
-          startTime: new Date().setHours(1),
+          startTime: new Date().setHours(1, 0),
           endTime: new Date().setHours(17, 37),
           category: "nema informacija",
         },
@@ -995,6 +1002,13 @@ export const data = {
           score: undefined,
           img: "https://mojtv.hr/thumb.ashx?path=/images/fbb8891b-2d47-4dd2-b017-c7806eea057e.jpg&w=163&h=80",
         },
+        {
+          id: 100,
+          name: "Nema informacija",
+          startTime: new Date().setHours(29, 5),
+          endTime: new Date().setHours(45, 0),
+          category: "nema informacija",
+        },
       ],
     },
     {
@@ -1003,7 +1017,7 @@ export const data = {
         {
           id: 100,
           name: "Nema informacija",
-          startTime: new Date().setHours(1),
+          startTime: new Date().setHours(1, 0),
           endTime: new Date().setHours(17, 5),
           category: "nema informacija",
         },
@@ -1073,7 +1087,7 @@ export const data = {
           id: 76,
           name: "RTL Direkt",
           startTime: new Date().setHours(22, 22),
-          endTime: new Date().setHours(23),
+          endTime: new Date().setHours(23, 0),
           description:
             "Od ponedjeljka do četvrtka u večernjem terminu Mojmira Pastorčić najvažnije dnevne događaje donosi direktno i sa stavom. RTL Direkt je prisutan svugdje i izvještava o svemu, s vama i za vas – naše gledatelje.",
           category: "informativan program",
@@ -1084,7 +1098,7 @@ export const data = {
         {
           id: 77,
           name: "Tightrope (1984)",
-          startTime: new Date().setHours(23),
+          startTime: new Date().setHours(23, 0),
           endTime: new Date().setHours(25, 1),
           description:
             "Policijski detektiv koji živi kao samohrani otac hvata serijskog ubojicu prostitutki.",
@@ -1139,7 +1153,7 @@ export const data = {
           id: 100,
           name: "Nema informacija",
           startTime: new Date().setHours(27, 25),
-          endTime: new Date().setHours(29, 5),
+          endTime: new Date().setHours(45, 0),
           category: "nema informacija",
         },
       ],
