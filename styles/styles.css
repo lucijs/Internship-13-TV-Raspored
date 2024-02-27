@@ -22,7 +22,6 @@ header h2 {
 }
 
 #tv-guide {
-  margin-top: 60px;
   margin-left: 15px;
   display: flex;
 }
@@ -46,6 +45,7 @@ header h2 {
 }
 
 #tv-guide-grid {
+  position: relative;
   display: grid;
   overflow-x: scroll;
   margin-left: 105px;
@@ -78,6 +78,20 @@ header h2 {
   font-weight: 400;
   line-height: 14px;
   letter-spacing: 0.14px;
+}
+
+#line {
+  position: absolute;
+  left: 200px;
+  top: 1px;
+  width: 3px;
+  height: 254px;
+  z-index: 999;
+  background: #df4f97;
+}
+
+#time-line {
+  margin-top: 60px;
 }
 
 @media screen and (max-width: 1000px) {

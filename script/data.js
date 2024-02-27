@@ -4,10 +4,17 @@ export const data = {
       name: "hrt 1",
       broadcasted: [
         {
+          id: 100,
+          name: "Nema informacija",
+          startTime: new Date().setHours(1),
+          endTime: new Date().setHours(18, 17),
+          category: "nema informacija",
+        },
+        {
           id: 1,
           name: "Potjera",
           startTime: new Date().setHours(18, 17),
-          endTime: new Date().setHours(18, 59),
+          endTime: new Date().setHours(19),
           description:
             "U 'Potjeri' četiri natjecatelja odgovaraju na pitanja općeg znanja i istovremeno grade taktiku koja će ih dovesti do finalnog kruga. Međutim, na putu im stoji Lovac. Taj će (ne)uobičajeni protivnik u uzbudljivoj igri znanja i brzine pokušati natjecatelje, jednog po jednog, izbaciti iz igre i onemogućiti ih da osvoje desetke tisuća kuna.",
           category: "zabavan program",
@@ -19,7 +26,7 @@ export const data = {
           id: 2,
           name: "Dnevnik 2",
           startTime: new Date().setHours(19),
-          endTime: new Date().setHours(20, 15),
+          endTime: new Date().setHours(20, 19),
           description:
             "Najvažnije vijesti iz zemlje i svijeta, brojne reportaže, gostovanja istaknutih stručnjaka i komentatora u Dnevniku 2, u najgledanijoj informativnoj emisiji HTV-a. Uz sportske aktualnosti pogledajte i detaljnu vremensku prognozu za sljedeće dane.",
           category: "informativan program",
@@ -30,8 +37,8 @@ export const data = {
         {
           id: 3,
           name: "What's up Sjever-Jug",
-          startTime: new Date().setHours(20, 16),
-          endTime: new Date().setHours(21, 14),
+          startTime: new Date().setHours(20, 19),
+          endTime: new Date().setHours(21, 15),
           description:
             "Kada su se u 19. stoljeću razdvajale Danska i Norveška, vojno jača Danska dobila je Grenland, ledeni otok, ali ipak čvrsto tlo, dok je Norveškoj pripalo Sjeverno more. Do danas Danci tuguju zbog te podjele. Saznat ćemo o norveškom fondu nafte i plina.",
           category: "dokumentarni program",
@@ -43,7 +50,7 @@ export const data = {
           id: 4,
           name: "Fortuna",
           startTime: new Date().setHours(21, 15),
-          endTime: new Date().setHours(22, 17),
+          endTime: new Date().setHours(22, 18),
           description:
             "'La Fortuna' je španjolsko-američka pustolovna serija. Mladi diplomat Álex Ventura predvodi misiju čiji je cilj vratiti olupina broda koju je prisvojio lovac na blago Frank Wild.",
           category: "serija",
@@ -57,7 +64,7 @@ export const data = {
           id: 5,
           name: "Otvoreno",
           startTime: new Date().setHours(22, 18),
-          endTime: new Date().setHours(22, 54),
+          endTime: new Date().setHours(22, 55),
           description:
             "Od rezerve do pobjednika Dore! Kako je Baby Lasagna u mjesec dana osvojio publiku, uvjerljivo odnio pobjedu i odmah skočio na drugo mjesto na kladionicama? Hvata li Hrvatska s Baby Lasagnom priliku za pobjedu?",
           category: "informativan program",
@@ -69,7 +76,7 @@ export const data = {
           id: 6,
           name: "Dnevnik 3",
           startTime: new Date().setHours(22, 55),
-          endTime: new Date().setHours(23, 17),
+          endTime: new Date().setHours(23, 18),
           description:
             "Najnovije vijesti iz zemlje i svijeta te sažeta vremenska prognoza za sljedeći dan.",
           category: "informativan program",
@@ -93,7 +100,7 @@ export const data = {
           id: 8,
           name: "Putin: Ruska špijunska priča",
           startTime: new Date().setHours(23, 45),
-          endTime: new Date().setHours(25, 40),
+          endTime: new Date().setHours(25, 41),
           description:
             "U drugoj epizodi dokumentarne serije vidjet ćemo kako je Vladimir Putin stigao u Kremlj kao ranjivi i nepoznati predsjednik kojega su ruski oligarsi htjeli kontrolirati. Otkrit ćemo kako je učvrstio svoju moć te se na kraju okružio kolegama iz KGB-a.",
           category: "dokumentarni program",
@@ -127,11 +134,25 @@ export const data = {
           score: undefined,
           img: "https://mojtv.hr/thumb.ashx?path=/images/2023-09/058f3981-6cb3-4f71-a098-b342e8.jpg&w=163&h=80",
         },
+        {
+          id: 100,
+          name: "Nema informacija",
+          startTime: new Date().setHours(27, 30),
+          endTime: new Date().setHours(29, 5),
+          category: "nema informacija",
+        },
       ],
     },
     {
       name: "hrt 2",
       broadcasted: [
+        {
+          id: 100,
+          name: "Nema informacija",
+          startTime: new Date().setHours(1),
+          endTime: new Date().setHours(17, 14),
+          category: "nema informacija",
+        },
         {
           id: 11,
           name: "Dom na kvadrat",
@@ -147,7 +168,7 @@ export const data = {
         {
           id: 12,
           name: "Istrage prometnih nesreća",
-          startTime: new Date().setHours(17, 48),
+          startTime: new Date().setHours(17, 47),
           endTime: new Date().setHours(18, 48),
           description:
             "Analiziramo najteže nesreće na hrvatskim prometnicama. S prometnim stručnjakom Damirom Novakom komentiramo svakodnevne greške vozača. U rubrici Svjedočanstva donosimo priču Ivane Smrečki.",
@@ -159,7 +180,7 @@ export const data = {
         {
           id: 13,
           name: "Glas domovine",
-          startTime: new Date().setHours(18, 49),
+          startTime: new Date().setHours(18, 48),
           endTime: new Date().setHours(19, 49),
           description:
             "U emisiji: životna i poslovna priča Ante Budana iz slovenskog Kopra; predstavljen Hrvatski iseljenički zbornik, gošća emisije je urednica Matičinog ljetopisa Vesna Kukavica; kako su izgledala pokladna okupljanja bačkih Hrvata.",
@@ -183,7 +204,7 @@ export const data = {
         {
           id: 15,
           name: "Priroda i prijateljice",
-          startTime: new Date().setHours(20, 36),
+          startTime: new Date().setHours(20, 35),
           endTime: new Date().setHours(21, 29),
           description:
             "Sandi Toksvig i Judi Love, komičarka i televizijska autorica, otići će u Cumbriju i odsjesti u tri spektakularne i jedinstvene kuće. Šetat će dolinama, planinariti brdima i ploviti čamcem na glasovitim jezerima.",
@@ -195,7 +216,7 @@ export const data = {
         {
           id: 16,
           name: "Veliki bijeg",
-          startTime: new Date().setHours(21, 30),
+          startTime: new Date().setHours(21, 29),
           endTime: new Date().setHours(22, 21),
           description:
             "Druga epizoda dokumentarne serije koja rekonstruira planiranje i provedbu jednog od najhrabrijih pothvata tijekom Drugog svjetskog rata - bijeg iz Stalaga Luft III. Stotine savezničkih vojnika riskirale su život kako bi se suprotstavile Hitleru.",
@@ -219,7 +240,7 @@ export const data = {
         {
           id: 18,
           name: "Dolina sreće",
-          startTime: new Date().setHours(24, 21),
+          startTime: new Date().setHours(24, 20),
           endTime: new Date().setHours(25, 17),
           description:
             "Catherine doznaje za bolnu izdaju bliske osobe, a Faisal se nalazi pod sve većim pritiskom sa svih strana.",
@@ -233,7 +254,7 @@ export const data = {
         {
           id: 19,
           name: "Novi stari slučajevi",
-          startTime: new Date().setHours(25, 18),
+          startTime: new Date().setHours(25, 17),
           endTime: new Date().setHours(26, 17),
           description:
             "Tenzije između Neda i Sashe rastu. Prisiljeni su raditi zajedno kad se posumnja da je smrt filmskog kritičara, čije je tijelo pronađeno u kanalu, povezana s 20 godina starim ubojstvom konceptualnog umjetnika Davida Strake. Dok ispituje Strakine koleg.",
@@ -247,7 +268,7 @@ export const data = {
         {
           id: 20,
           name: "Art a la carte",
-          startTime: new Date().setHours(26, 18),
+          startTime: new Date().setHours(26, 17),
           endTime: new Date().setHours(26, 48),
           description:
             "Više od pukog kulturnog pregleda! Od ponedjeljka do četvrtka, pola sata, uživo pratimo kulturne događaje i fenomene iz likovne umjetnosti, klasične glazbe, književnosti, kazališta, plesa, arhitekture i dizajna, popularne glazbe, filma. Problematizira.",
@@ -256,16 +277,30 @@ export const data = {
           score: undefined,
           img: "https://mojtv.hr/thumb.ashx?path=/images/2017-10/7e941b00-93c1-4fa7-955b-c3618d.jpg&w=163&h=80",
         },
+        {
+          id: 100,
+          name: "Nema informacija",
+          startTime: new Date().setHours(26, 48),
+          endTime: new Date().setHours(29, 5),
+          category: "nema informacija",
+        },
       ],
     },
     {
       name: "nova tv",
       broadcasted: [
         {
+          id: 100,
+          name: "Nema informacija",
+          startTime: new Date().setHours(1),
+          endTime: new Date().setHours(17, 34),
+          category: "nema informacija",
+        },
+        {
           id: 21,
           name: "Joker",
-          startTime: new Date().setHours(18),
-          endTime: new Date().setHours(19),
+          startTime: new Date().setHours(17, 34),
+          endTime: new Date().setHours(18, 57),
           description:
             "U drugoj epizodi novog kviza ''Joker'' zaigrat će umirovljenica Doris Vlah iz Opatije. Po struci je trgovkinja, no njezina najveća strast je kuhanje, pa preko ljeta radi i kao privatni chef u vilama.",
           category: "zabavan program",
@@ -276,8 +311,8 @@ export const data = {
         {
           id: 22,
           name: "Dnevnik Nove TV",
-          startTime: new Date().setHours(19),
-          endTime: new Date().setHours(20, 20),
+          startTime: new Date().setHours(18, 57),
+          endTime: new Date().setHours(20, 30),
           description:
             "Najgledanija središnja informativna emisija u zemlji gledateljima svake večeri donosi najvažnije i najrelevantnije informacije iz zemlje i svijeta. Propušteni Dnevnik Nove TV pogledajte na novatv.hr.",
           category: "informativan program",
@@ -288,7 +323,7 @@ export const data = {
         {
           id: 23,
           name: "Kumovi",
-          startTime: new Date().setHours(20, 20),
+          startTime: new Date().setHours(20, 30),
           endTime: new Date().setHours(21, 25),
           description:
             "Vedrana se nađe u problemu te je suočena sa teškim odlukama. Nakon mnogo razmišljanja, odlučuje razgovarati i sa Zlatanom, no Zlatan je preduhitri te joj kaže da ide s Terezom u Milano. Anđela pak poludi kad čuje Lucu i Janka da odgađaju vjenčanje.",
@@ -302,7 +337,7 @@ export const data = {
         {
           id: 24,
           name: "Zlatni kavez",
-          startTime: new Date().setHours(21, 26),
+          startTime: new Date().setHours(21, 25),
           endTime: new Date().setHours(22, 16),
           description:
             "Nakon niza neočekivanih događaja, Kazim radi veliki preokret. Nakon što majci Esme pozli, Sejran će morati progutati svoj ponos i poći s Feritom koji ju je ponovno čekao cijelu noć.",
@@ -316,7 +351,7 @@ export const data = {
         {
           id: 25,
           name: "Oproštajno pismo",
-          startTime: new Date().setHours(22, 17),
+          startTime: new Date().setHours(22, 16),
           endTime: new Date().setHours(23, 25),
           description:
             "U domu obitelji Karli, atmosfera je napeta dok Nevzat i najbliži iščekuju ključne vijesti. Hatidže gubi kontrolu nad svojim osjećajima kada čuje nove informacije, obuzeta nevjerojatnim bijesom. S druge strane, Asli dobiva neočekivano dobre vijesti.",
@@ -330,7 +365,7 @@ export const data = {
         {
           id: 26,
           name: "Večernje vijesti",
-          startTime: new Date().setHours(23, 26),
+          startTime: new Date().setHours(23, 25),
           endTime: new Date().setHours(24, 12),
           description:
             "Pregled najvažnijih informacija iz zemlje i svijeta gledatelji mogu pratiti u Vijestima u 14 i 17 sati te u Večernjim vijestima. Propuštene Vijesti Nove TV pogledajte na novatv.hr.",
@@ -342,7 +377,7 @@ export const data = {
         {
           id: 27,
           name: "21 Jump street",
-          startTime: new Date().setHours(24, 13),
+          startTime: new Date().setHours(24, 12),
           endTime: new Date().setHours(25, 54),
           description:
             "Odred mladolikih policajaca ubačen je u srednju školu kako bi stali na kraj moćnom dileru.",
@@ -354,7 +389,7 @@ export const data = {
         {
           id: 28,
           name: "Mjesto usijanja",
-          startTime: new Date().setHours(25, 55),
+          startTime: new Date().setHours(25, 54),
           endTime: new Date().setHours(27, 25),
           description:
             "Neočekivani dvojac mora zajednički nadmudriti zločince i spasiti grad od bombaških napada.",
@@ -394,6 +429,13 @@ export const data = {
       name: "rtl",
       broadcasted: [
         {
+          id: 100,
+          name: "Nema informacija",
+          startTime: new Date().setHours(1),
+          endTime: new Date().setHours(17, 5),
+          category: "nema informacija",
+        },
+        {
           id: 31,
           name: "Dođi, pogodi, osvoji",
           startTime: new Date().setHours(17, 5),
@@ -408,7 +450,7 @@ export const data = {
         {
           id: 32,
           name: "Večera za 5",
-          startTime: new Date().setHours(17, 56),
+          startTime: new Date().setHours(17, 55),
           endTime: new Date().setHours(19, 4),
           description:
             "Gledatelje očekuje nova porcija domaćih obroka i zanimljivih kulinarskih trikova uz lepezu raskošnih karaktera iz svih dijelova Hrvatske. Kulinarsko putovanje Hrvatskom vodi gledatelje u dvije županiju - Varaždinsku i Međimursku.",
@@ -420,7 +462,7 @@ export const data = {
         {
           id: 33,
           name: "RTL danas",
-          startTime: new Date().setHours(19, 5),
+          startTime: new Date().setHours(19, 4),
           endTime: new Date().setHours(20, 25),
           description:
             "RTL Danas svakog dana donosi samo aktualne, istinite i objektivne informacije. Uz etablirano uredništvo i voditelje, RTL Danas je prvi, neovisan i nepristran informativni program.",
@@ -432,7 +474,7 @@ export const data = {
         {
           id: 34,
           name: "San snova",
-          startTime: new Date().setHours(20, 26),
+          startTime: new Date().setHours(20, 25),
           endTime: new Date().setHours(21, 11),
           description:
             "Nakon spektakularne pobjede protiv Pučkog klub je u euforiji, ali vijesti vezane za Alena promijenit će atmosferu. Hoće li se Maji vratiti povjerenje u Alena? Mirko se sve dublje zakopava u svojim lažima, a sa sobom povlači i klub. ",
@@ -446,7 +488,7 @@ export const data = {
         {
           id: 35,
           name: "Brak na prvu",
-          startTime: new Date().setHours(21, 12),
+          startTime: new Date().setHours(21, 11),
           endTime: new Date().setHours(22, 22),
           description:
             "Pet je parova na prvoj ceremoniji odluke odlučilo ostati u sociološkom eksperimentu, a na površinu su izašle emocije, simpatije i razočaranja. Klara i Lovre posljednji su par koji će se suočiti sa stručnjacima.",
@@ -458,8 +500,8 @@ export const data = {
         {
           id: 36,
           name: "RTL Direkt",
-          startTime: new Date().setHours(22, 23),
-          endTime: new Date().setHours(22, 59),
+          startTime: new Date().setHours(22, 22),
+          endTime: new Date().setHours(23),
           description:
             "Od ponedjeljka do četvrtka u večernjem terminu Mojmira Pastorčić najvažnije dnevne događaje donosi direktno i sa stavom. RTL Direkt je prisutan svugdje i izvještava o svemu, s vama i za vas – naše gledatelje.",
           category: "informativan program",
@@ -482,7 +524,7 @@ export const data = {
         {
           id: 38,
           name: "Zločinački umovi",
-          startTime: new Date().setHours(25, 2),
+          startTime: new Date().setHours(25, 1),
           endTime: new Date().setHours(25, 47),
           description:
             "Istražitelji su u lovu na serijskog ubojicu na Floridi, čiji je identitet poznat policiji, koja ga nije uspjela uloviti jer stalno mijenja izgled. Takav način djelovanja omogućava mu da bira slučajne žrtve koje onda muči u hotelskim sobama.",
@@ -496,7 +538,7 @@ export const data = {
         {
           id: 39,
           name: "Zločinački umovi",
-          startTime: new Date().setHours(25, 48),
+          startTime: new Date().setHours(25, 47),
           endTime: new Date().setHours(26, 34),
           description:
             "Istražitelji surađuju s CIA-om u njenim uredima u Virginiji kako bi razotkrili izdajicu u srcu organizacije. Curenje informacija stavlja u opasnost ljude na terenu pa je pronalazak „krtice“ hitan prioritet.",
@@ -510,7 +552,7 @@ export const data = {
         {
           id: 40,
           name: "Zločinački umovi",
-          startTime: new Date().setHours(26, 35),
+          startTime: new Date().setHours(26, 34),
           endTime: new Date().setHours(27, 25),
           description:
             "Istražitelji se nalaze na zasluženom odmoru na različitim lokacijama, gdje svaki od njih dobiva poruku od psihotičnog ubojice, opsjednutog legendom o kralju Arthuru te ih izaziva da pronađu i spase osobu koju je on označio kao sljedeću žrtvu.",
@@ -521,16 +563,30 @@ export const data = {
           score: undefined,
           img: "https://mojtv.hr/thumb.ashx?path=/images/2017-06/ff6469a3-3af6-4a34-b437-3025b1.jpg&w=163&h=80",
         },
+        {
+          id: 100,
+          name: "Nema informacija",
+          startTime: new Date().setHours(27, 25),
+          endTime: new Date().setHours(29, 5),
+          category: "nema informacija",
+        },
       ],
     },
     {
       name: "hrt 3",
       broadcasted: [
         {
+          id: 100,
+          name: "Nema informacija",
+          startTime: new Date().setHours(1),
+          endTime: new Date().setHours(18, 17),
+          category: "nema informacija",
+        },
+        {
           id: 41,
           name: "Potjera",
           startTime: new Date().setHours(18, 17),
-          endTime: new Date().setHours(18, 59),
+          endTime: new Date().setHours(19),
           description:
             "U 'Potjeri' četiri natjecatelja odgovaraju na pitanja općeg znanja i istovremeno grade taktiku koja će ih dovesti do finalnog kruga. Međutim, na putu im stoji Lovac. Taj će (ne)uobičajeni protivnik u uzbudljivoj igri znanja i brzine pokušati natjecatelje, jednog po jednog, izbaciti iz igre i onemogućiti ih da osvoje desetke tisuća kuna.",
           category: "zabavan program",
@@ -542,7 +598,7 @@ export const data = {
           id: 42,
           name: "Dnevnik 2",
           startTime: new Date().setHours(19),
-          endTime: new Date().setHours(20, 15),
+          endTime: new Date().setHours(20, 22),
           description:
             "Najvažnije vijesti iz zemlje i svijeta, brojne reportaže, gostovanja istaknutih stručnjaka i komentatora u Dnevniku 2, u najgledanijoj informativnoj emisiji HTV-a. Uz sportske aktualnosti pogledajte i detaljnu vremensku prognozu za sljedeće dane.",
           category: "informativan program",
@@ -553,7 +609,7 @@ export const data = {
         {
           id: 43,
           name: "What's up Sjever-Jug",
-          startTime: new Date().setHours(20, 16),
+          startTime: new Date().setHours(20, 22),
           endTime: new Date().setHours(21, 14),
           description:
             "Kada su se u 19. stoljeću razdvajale Danska i Norveška, vojno jača Danska dobila je Grenland, ledeni otok, ali ipak čvrsto tlo, dok je Norveškoj pripalo Sjeverno more. Do danas Danci tuguju zbog te podjele. Saznat ćemo o norveškom fondu nafte i plina.",
@@ -565,7 +621,7 @@ export const data = {
         {
           id: 44,
           name: "Fortuna",
-          startTime: new Date().setHours(21, 15),
+          startTime: new Date().setHours(21, 14),
           endTime: new Date().setHours(22, 17),
           description:
             "'La Fortuna' je španjolsko-američka pustolovna serija. Mladi diplomat Álex Ventura predvodi misiju čiji je cilj vratiti olupina broda koju je prisvojio lovac na blago Frank Wild.",
@@ -579,7 +635,7 @@ export const data = {
         {
           id: 45,
           name: "Otvoreno",
-          startTime: new Date().setHours(22, 18),
+          startTime: new Date().setHours(22, 17),
           endTime: new Date().setHours(22, 54),
           description:
             "Od rezerve do pobjednika Dore! Kako je Baby Lasagna u mjesec dana osvojio publiku, uvjerljivo odnio pobjedu i odmah skočio na drugo mjesto na kladionicama? Hvata li Hrvatska s Baby Lasagnom priliku za pobjedu?",
@@ -591,7 +647,7 @@ export const data = {
         {
           id: 46,
           name: "Dnevnik 3",
-          startTime: new Date().setHours(22, 55),
+          startTime: new Date().setHours(22, 54),
           endTime: new Date().setHours(23, 17),
           description:
             "Najnovije vijesti iz zemlje i svijeta te sažeta vremenska prognoza za sljedeći dan.",
@@ -603,7 +659,7 @@ export const data = {
         {
           id: 47,
           name: "Labirint",
-          startTime: new Date().setHours(23, 18),
+          startTime: new Date().setHours(23, 17),
           endTime: new Date().setHours(23, 45),
           description:
             "Cijene stanova lete u nebo. Mnogim su mladim obiteljima vlastiti stambeni kvadrati daleki san. Istodobno, teško se pronalaze povoljni podstanarski stanovi. Tko kupuje skupe stambene kvadrate? Zašto država ne gradi stanove za najam?",
@@ -627,7 +683,7 @@ export const data = {
         {
           id: 9,
           name: "Potjera",
-          startTime: new Date().setHours(25, 41),
+          startTime: new Date().setHours(25, 40),
           endTime: new Date().setHours(26, 30),
           description:
             "U 'Potjeri' četiri natjecatelja odgovaraju na pitanja općeg znanja i istovremeno grade taktiku koja će ih dovesti do finalnog kruga. Međutim, na putu im stoji Lovac. Taj će (ne)uobičajeni protivnik u uzbudljivoj igri znanja i brzine pokušati natjecatelje, jednog po jednog, izbaciti iz igre i onemogućiti ih da osvoje desetke tisuća kuna.",
@@ -650,11 +706,25 @@ export const data = {
           score: undefined,
           img: "https://mojtv.hr/thumb.ashx?path=/images/2023-09/058f3981-6cb3-4f71-a098-b342e8.jpg&w=163&h=80",
         },
+        {
+          id: 100,
+          name: "Nema informacija",
+          startTime: new Date().setHours(27, 30),
+          endTime: new Date().setHours(29, 5),
+          category: "nema informacija",
+        },
       ],
     },
     {
       name: "hrt 4",
       broadcasted: [
+        {
+          id: 100,
+          name: "Nema informacija",
+          startTime: new Date().setHours(1),
+          endTime: new Date().setHours(17, 14),
+          category: "nema informacija",
+        },
         {
           id: 51,
           name: "Dom na kvadrat",
@@ -670,7 +740,7 @@ export const data = {
         {
           id: 52,
           name: "Istrage prometnih nesreća",
-          startTime: new Date().setHours(17, 48),
+          startTime: new Date().setHours(17, 47),
           endTime: new Date().setHours(18, 48),
           description:
             "Analiziramo najteže nesreće na hrvatskim prometnicama. S prometnim stručnjakom Damirom Novakom komentiramo svakodnevne greške vozača. U rubrici Svjedočanstva donosimo priču Ivane Smrečki.",
@@ -682,7 +752,7 @@ export const data = {
         {
           id: 53,
           name: "Glas domovine",
-          startTime: new Date().setHours(18, 49),
+          startTime: new Date().setHours(18, 48),
           endTime: new Date().setHours(19, 49),
           description:
             "U emisiji: životna i poslovna priča Ante Budana iz slovenskog Kopra; predstavljen Hrvatski iseljenički zbornik, gošća emisije je urednica Matičinog ljetopisa Vesna Kukavica; kako su izgledala pokladna okupljanja bačkih Hrvata.",
@@ -706,7 +776,7 @@ export const data = {
         {
           id: 55,
           name: "Priroda i prijateljice",
-          startTime: new Date().setHours(20, 36),
+          startTime: new Date().setHours(20, 35),
           endTime: new Date().setHours(21, 29),
           description:
             "Sandi Toksvig i Judi Love, komičarka i televizijska autorica, otići će u Cumbriju i odsjesti u tri spektakularne i jedinstvene kuće. Šetat će dolinama, planinariti brdima i ploviti čamcem na glasovitim jezerima.",
@@ -718,7 +788,7 @@ export const data = {
         {
           id: 56,
           name: "Veliki bijeg",
-          startTime: new Date().setHours(21, 30),
+          startTime: new Date().setHours(21, 29),
           endTime: new Date().setHours(22, 21),
           description:
             "Druga epizoda dokumentarne serije koja rekonstruira planiranje i provedbu jednog od najhrabrijih pothvata tijekom Drugog svjetskog rata - bijeg iz Stalaga Luft III. Stotine savezničkih vojnika riskirale su život kako bi se suprotstavile Hitleru.",
@@ -742,7 +812,7 @@ export const data = {
         {
           id: 58,
           name: "Dolina sreće",
-          startTime: new Date().setHours(24, 21),
+          startTime: new Date().setHours(24, 20),
           endTime: new Date().setHours(25, 17),
           description:
             "Catherine doznaje za bolnu izdaju bliske osobe, a Faisal se nalazi pod sve većim pritiskom sa svih strana.",
@@ -756,7 +826,7 @@ export const data = {
         {
           id: 59,
           name: "Novi stari slučajevi",
-          startTime: new Date().setHours(25, 18),
+          startTime: new Date().setHours(25, 17),
           endTime: new Date().setHours(26, 17),
           description:
             "Tenzije između Neda i Sashe rastu. Prisiljeni su raditi zajedno kad se posumnja da je smrt filmskog kritičara, čije je tijelo pronađeno u kanalu, povezana s 20 godina starim ubojstvom konceptualnog umjetnika Davida Strake. Dok ispituje Strakine koleg.",
@@ -770,7 +840,7 @@ export const data = {
         {
           id: 60,
           name: "Art a la carte",
-          startTime: new Date().setHours(26, 18),
+          startTime: new Date().setHours(26, 17),
           endTime: new Date().setHours(26, 48),
           description:
             "Više od pukog kulturnog pregleda! Od ponedjeljka do četvrtka, pola sata, uživo pratimo kulturne događaje i fenomene iz likovne umjetnosti, klasične glazbe, književnosti, kazališta, plesa, arhitekture i dizajna, popularne glazbe, filma. Problematizira.",
@@ -779,16 +849,30 @@ export const data = {
           score: undefined,
           img: "https://mojtv.hr/thumb.ashx?path=/images/2017-10/7e941b00-93c1-4fa7-955b-c3618d.jpg&w=163&h=80",
         },
+        {
+          id: 100,
+          name: "Nema informacija",
+          startTime: new Date().setHours(26, 48),
+          endTime: new Date().setHours(29, 5),
+          category: "nema informacija",
+        },
       ],
     },
     {
       name: "doma",
       broadcasted: [
         {
+          id: 100,
+          name: "Nema informacija",
+          startTime: new Date().setHours(1),
+          endTime: new Date().setHours(17, 37),
+          category: "nema informacija",
+        },
+        {
           id: 61,
           name: "Joker",
-          startTime: new Date().setHours(18),
-          endTime: new Date().setHours(19),
+          startTime: new Date().setHours(17, 37),
+          endTime: new Date().setHours(18, 47),
           description:
             "U drugoj epizodi novog kviza ''Joker'' zaigrat će umirovljenica Doris Vlah iz Opatije. Po struci je trgovkinja, no njezina najveća strast je kuhanje, pa preko ljeta radi i kao privatni chef u vilama.",
           category: "zabavan program",
@@ -799,7 +883,7 @@ export const data = {
         {
           id: 62,
           name: "Dnevnik Nove TV",
-          startTime: new Date().setHours(19),
+          startTime: new Date().setHours(18, 47),
           endTime: new Date().setHours(20, 20),
           description:
             "Najgledanija središnja informativna emisija u zemlji gledateljima svake večeri donosi najvažnije i najrelevantnije informacije iz zemlje i svijeta. Propušteni Dnevnik Nove TV pogledajte na novatv.hr.",
@@ -825,7 +909,7 @@ export const data = {
         {
           id: 64,
           name: "Zlatni kavez",
-          startTime: new Date().setHours(21, 26),
+          startTime: new Date().setHours(21, 25),
           endTime: new Date().setHours(22, 16),
           description:
             "Nakon niza neočekivanih događaja, Kazim radi veliki preokret. Nakon što majci Esme pozli, Sejran će morati progutati svoj ponos i poći s Feritom koji ju je ponovno čekao cijelu noć.",
@@ -839,7 +923,7 @@ export const data = {
         {
           id: 65,
           name: "Oproštajno pismo",
-          startTime: new Date().setHours(22, 17),
+          startTime: new Date().setHours(22, 16),
           endTime: new Date().setHours(23, 25),
           description:
             "U domu obitelji Karli, atmosfera je napeta dok Nevzat i najbliži iščekuju ključne vijesti. Hatidže gubi kontrolu nad svojim osjećajima kada čuje nove informacije, obuzeta nevjerojatnim bijesom. S druge strane, Asli dobiva neočekivano dobre vijesti.",
@@ -853,7 +937,7 @@ export const data = {
         {
           id: 66,
           name: "Večernje vijesti",
-          startTime: new Date().setHours(23, 26),
+          startTime: new Date().setHours(23, 25),
           endTime: new Date().setHours(24, 12),
           description:
             "Pregled najvažnijih informacija iz zemlje i svijeta gledatelji mogu pratiti u Vijestima u 14 i 17 sati te u Večernjim vijestima. Propuštene Vijesti Nove TV pogledajte na novatv.hr.",
@@ -865,7 +949,7 @@ export const data = {
         {
           id: 67,
           name: "21 Jump street",
-          startTime: new Date().setHours(24, 13),
+          startTime: new Date().setHours(24, 12),
           endTime: new Date().setHours(25, 54),
           description:
             "Odred mladolikih policajaca ubačen je u srednju školu kako bi stali na kraj moćnom dileru.",
@@ -877,7 +961,7 @@ export const data = {
         {
           id: 68,
           name: "Mjesto usijanja",
-          startTime: new Date().setHours(25, 55),
+          startTime: new Date().setHours(25, 54),
           endTime: new Date().setHours(27, 25),
           description:
             "Neočekivani dvojac mora zajednički nadmudriti zločince i spasiti grad od bombaških napada.",
@@ -917,6 +1001,13 @@ export const data = {
       name: "rtl 2",
       broadcasted: [
         {
+          id: 100,
+          name: "Nema informacija",
+          startTime: new Date().setHours(1),
+          endTime: new Date().setHours(17, 5),
+          category: "nema informacija",
+        },
+        {
           id: 71,
           name: "Dođi, pogodi, osvoji",
           startTime: new Date().setHours(17, 5),
@@ -931,7 +1022,7 @@ export const data = {
         {
           id: 72,
           name: "Večera za 5",
-          startTime: new Date().setHours(17, 56),
+          startTime: new Date().setHours(17, 55),
           endTime: new Date().setHours(19, 4),
           description:
             "Gledatelje očekuje nova porcija domaćih obroka i zanimljivih kulinarskih trikova uz lepezu raskošnih karaktera iz svih dijelova Hrvatske. Kulinarsko putovanje Hrvatskom vodi gledatelje u dvije županiju - Varaždinsku i Međimursku.",
@@ -943,7 +1034,7 @@ export const data = {
         {
           id: 73,
           name: "RTL danas",
-          startTime: new Date().setHours(19, 5),
+          startTime: new Date().setHours(19, 4),
           endTime: new Date().setHours(20, 25),
           description:
             "RTL Danas svakog dana donosi samo aktualne, istinite i objektivne informacije. Uz etablirano uredništvo i voditelje, RTL Danas je prvi, neovisan i nepristran informativni program.",
@@ -955,7 +1046,7 @@ export const data = {
         {
           id: 74,
           name: "San snova",
-          startTime: new Date().setHours(20, 26),
+          startTime: new Date().setHours(20, 25),
           endTime: new Date().setHours(21, 11),
           description:
             "Nakon spektakularne pobjede protiv Pučkog klub je u euforiji, ali vijesti vezane za Alena promijenit će atmosferu. Hoće li se Maji vratiti povjerenje u Alena? Mirko se sve dublje zakopava u svojim lažima, a sa sobom povlači i klub. ",
@@ -969,7 +1060,7 @@ export const data = {
         {
           id: 75,
           name: "Brak na prvu",
-          startTime: new Date().setHours(21, 12),
+          startTime: new Date().setHours(21, 11),
           endTime: new Date().setHours(22, 22),
           description:
             "Pet je parova na prvoj ceremoniji odluke odlučilo ostati u sociološkom eksperimentu, a na površinu su izašle emocije, simpatije i razočaranja. Klara i Lovre posljednji su par koji će se suočiti sa stručnjacima.",
@@ -981,8 +1072,8 @@ export const data = {
         {
           id: 76,
           name: "RTL Direkt",
-          startTime: new Date().setHours(22, 23),
-          endTime: new Date().setHours(22, 59),
+          startTime: new Date().setHours(22, 22),
+          endTime: new Date().setHours(23),
           description:
             "Od ponedjeljka do četvrtka u večernjem terminu Mojmira Pastorčić najvažnije dnevne događaje donosi direktno i sa stavom. RTL Direkt je prisutan svugdje i izvještava o svemu, s vama i za vas – naše gledatelje.",
           category: "informativan program",
@@ -1005,7 +1096,7 @@ export const data = {
         {
           id: 78,
           name: "Zločinački umovi",
-          startTime: new Date().setHours(25, 2),
+          startTime: new Date().setHours(25, 1),
           endTime: new Date().setHours(25, 47),
           description:
             "Istražitelji su u lovu na serijskog ubojicu na Floridi, čiji je identitet poznat policiji, koja ga nije uspjela uloviti jer stalno mijenja izgled. Takav način djelovanja omogućava mu da bira slučajne žrtve koje onda muči u hotelskim sobama.",
@@ -1019,7 +1110,7 @@ export const data = {
         {
           id: 79,
           name: "Zločinački umovi",
-          startTime: new Date().setHours(25, 48),
+          startTime: new Date().setHours(25, 47),
           endTime: new Date().setHours(26, 34),
           description:
             "Istražitelji surađuju s CIA-om u njenim uredima u Virginiji kako bi razotkrili izdajicu u srcu organizacije. Curenje informacija stavlja u opasnost ljude na terenu pa je pronalazak „krtice“ hitan prioritet.",
@@ -1033,7 +1124,7 @@ export const data = {
         {
           id: 80,
           name: "Zločinački umovi",
-          startTime: new Date().setHours(26, 35),
+          startTime: new Date().setHours(26, 34),
           endTime: new Date().setHours(27, 25),
           description:
             "Istražitelji se nalaze na zasluženom odmoru na različitim lokacijama, gdje svaki od njih dobiva poruku od psihotičnog ubojice, opsjednutog legendom o kralju Arthuru te ih izaziva da pronađu i spase osobu koju je on označio kao sljedeću žrtvu.",
@@ -1043,6 +1134,13 @@ export const data = {
           isReplay: false,
           score: undefined,
           img: "https://mojtv.hr/thumb.ashx?path=/images/2017-06/ff6469a3-3af6-4a34-b437-3025b1.jpg&w=163&h=80",
+        },
+        {
+          id: 100,
+          name: "Nema informacija",
+          startTime: new Date().setHours(27, 25),
+          endTime: new Date().setHours(29, 5),
+          category: "nema informacija",
         },
       ],
     },
