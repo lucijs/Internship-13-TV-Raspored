@@ -16,34 +16,33 @@ function getCurrentTime() {
   }${minutes}`;
 }
 
-function updateLinePosition() {
-  const tvGuide = document.getElementById("tv-guide-grid");
-  const verticalLine = document.getElementById("line");
-  const totalCurrentMinutes = getCurrentMinutes();
-
-  if (totalCurrentMinutes < 600) {
-    tvGuide.scrollLeft = (totalCurrentMinutes + 24 * 60) * 4;
-    verticalLine.style.left = (totalCurrentMinutes + 24 * 60) * 4.5 + "px";
-  } else {
-    tvGuide.scrollLeft = totalCurrentMinutes * 4;
-    verticalLine.style.left = (totalCurrentMinutes - 60) * 4.5 + "px";
-  }
-}
-
 function updateTimeLine() {
   const timeLine = document.getElementById("time-line");
-  timeLine.innerHTML = "";
+  const tvGuide = document.getElementById("tv-guide-grid");
+  const verticalLine = document.getElementById("line");
+
   const time = document.createElement("div");
+  timeLine.innerHTML = "";
   const t = document.createElement("h3");
-  t.textContent = getCurrentTime();
   time.appendChild(t);
+
+  t.textContent = getCurrentTime();
   const totalCurrentMinutes = getCurrentMinutes();
 
-  if (totalCurrentMinutes < 600) {
+  if (totalCurrentMinutes < 400) {
+    tvGuide.scrollLeft = (totalCurrentMinutes + 24 * 60) * 4;
+    verticalLine.style.left = (totalCurrentMinutes + 24 * 60) * 4.5 + "px";
     time.style.left = (totalCurrentMinutes + 24 * 60) * 4.5 - 18 + "px";
-  } else {
-    time.style.left = `${totalCurrentMinutes / 2 - 170}px`;
+
+    timeLine.appendChild(time);
+
+    return;
   }
+
+  tvGuide.scrollLeft = totalCurrentMinutes * 4;
+  verticalLine.style.left = (totalCurrentMinutes - 60) * 4.5 + "px";
+  time.style.left = (totalCurrentMinutes - 60) * 4.5 - 18 + "px";
+
   timeLine.appendChild(time);
 }
 
@@ -52,26 +51,36 @@ function renderTVGuide() {
     mobileVersion();
     return;
   }
+
   const channelsList = document.getElementById("tv-guide-program-names");
-  updateTimeLine();
   channelsList.innerHTML = "";
+
   const showsGrid = document.getElementById("tv-guide-grid");
+
   data.programs.forEach((channel) => {
     const gridRow = document.createElement("div");
     gridRow.classList.add("tv-guide-grid-row");
+    gridRow.setAttribute("channel", channel.name);
+
     const channelHeader = document.createElement("h2");
     channelHeader.textContent = channel.name;
+    channelHeader.setAttribute("channel", channel.name);
+
     channelsList.appendChild(channelHeader);
 
     channel.broadcasted.forEach((show) => {
       const showDiv = document.createElement("div");
+
       const showA = document.createElement("a");
-      const duration = (show.endTime - show.startTime) / (1000 * 60);
-      const width = duration * 4.5;
-      showDiv.style.width = width + "px";
       showA.setAttribute("id", show.id);
+
       const showName = document.createElement("h3");
       showName.classList.add("show-title");
+
+      const duration = (show.endTime - show.startTime) / (1000 * 60);
+      const width = duration * 4.5;
+
+      showDiv.style.width = width + "px";
 
       if (!show.isReplay) showName.textContent = show.name;
       else showName.textContent = show.name + " (R)";
@@ -80,7 +89,8 @@ function renderTVGuide() {
       showA.appendChild(showDiv);
       gridRow.appendChild(showA);
     });
-    updateLinePosition();
+
+    updateTimeLine();
     showsGrid.appendChild(gridRow);
   });
 }
@@ -88,21 +98,27 @@ function renderTVGuide() {
 function mobileVersion() {
   const channelsList = document.getElementById("tv-guide-program-names");
   channelsList.innerHTML = "";
+
   const showsGrid = document.getElementById("tv-guide-grid");
+
   data.programs.forEach((channel) => {
     const gridRow = document.createElement("div");
     gridRow.classList.add("tv-guide-grid-row");
+
     const channelHeader = document.createElement("h2");
     channelHeader.textContent = channel.name;
+
     channelsList.appendChild(channelHeader);
 
     channel.broadcasted.forEach((show) => {
       const showDiv = document.createElement("div");
+
+      const showName = document.createElement("h3");
+      showName.classList.add("show-title");
+
       const duration = (show.endTime - show.startTime) / (1000 * 60);
       const height = duration;
       showDiv.style.height = height + "px";
-      const showName = document.createElement("h3");
-      showName.classList.add("show-title");
 
       if (!show.isReplay) showName.textContent = show.name;
       else showName.textContent = show.name + " (R)";
@@ -110,11 +126,11 @@ function mobileVersion() {
       showDiv.appendChild(showName);
       gridRow.appendChild(showDiv);
     });
+
     updateLinePosition();
     showsGrid.appendChild(gridRow);
   });
 }
 
 renderTVGuide();
-setInterval(updateLinePosition, 60000);
 setInterval(updateTimeLine, 60000);

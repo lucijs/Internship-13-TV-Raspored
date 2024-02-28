@@ -39,7 +39,10 @@ const getPreviewData = (id) => {
       .then((json) => {
         const shows = json.shows;
         const getShow = shows[id - 1];
-        const duration = getShow.startTime + ":" + getShow.endTime;
+        const duration =
+          formattedTime(getShow.startTime) +
+          " - " +
+          formattedTime(getShow.endTime);
         resolve(duration);
       })
       .catch((error) => {
@@ -47,3 +50,9 @@ const getPreviewData = (id) => {
       });
   });
 };
+
+function formattedTime(time) {
+  const array = time.split("T");
+  const arrayTime = array[1].split(":");
+  return `${arrayTime[0]}:${arrayTime[1]}`;
+}

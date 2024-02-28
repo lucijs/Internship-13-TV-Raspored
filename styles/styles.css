@@ -122,16 +122,17 @@ button {
   border: 1px;
   align-items: center;
   line-height: 16px;
-  font-weight: 800;
-  gap: 10px;
-  text-transform: uppercase;
+  font-weight: 400;
   font-family: "Fuse V.2 Display";
   letter-spacing: 0.08em;
-  padding: 14px 32px;
-  font-style: normal;
   border-style: solid;
   border-color: #9c9696;
   background-color: 1px solid rgb(91, 86, 86);
+}
+
+button:hover {
+  color: #df4f97;
+  border-color: #df4f97;
 }
 
 .buttons {
@@ -144,35 +145,58 @@ button {
 .preview-tooltip {
   position: absolute;
   display: inline-block;
-  justify-content: space-between;
   left: inherit;
-  color: #000;
   background-color: #fff;
   border: 1px dotted black;
-  z-index: 999;
+  width: max-content;
+  height: 22px;
   font-size: 16px;
-  width: 550px;
-  height: 448px;
   overflow: visible;
 }
 
 .preview-tooltip span {
-  padding: 4px 8px;
+  color: #000;
+  background-color: #fff;
 }
 
-.preview-tooltip img {
-  object-fit: cover;
-  aspect-ratio: 1;
+.watched {
+  border: 1px solid #df4f97;
+}
+
+.watched div {
+  background-color: #816c77;
+}
+
+.watched h3 {
+  background-color: #816c77;
+}
+
+.currently-on {
+  color: #eb9bc3;
+}
+
+.pin {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
 @media screen and (max-width: 1000px) {
   #tv-guide-program-names {
     flex-direction: row;
-    gap: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-around;
     position: fixed;
-    top: 120px;
+    top: 50px;
     width: 100vw;
     z-index: 999;
+  }
+
+  #tv-guide {
+    margin: 0;
+    justify-content: space-around;
   }
 
   #tv-guide-program-names h2 {
@@ -195,11 +219,11 @@ button {
 
   .tv-guide-grid-row div {
     display: flex;
-    width: 36px;
+    width: 20vw;
   }
 
   .show-title {
-    font-size: 6px;
+    font-size: 8px;
     justify-self: center;
   }
 
@@ -220,5 +244,9 @@ button {
 
   header h2 {
     font-size: 60px;
+  }
+
+  .buttons {
+    flex-direction: column;
   }
 }
