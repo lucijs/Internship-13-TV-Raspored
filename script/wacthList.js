@@ -7,7 +7,6 @@ export async function renderList() {
   showCategory.classList.add("list-watch-later-show-category");
 
   const list = await getList();
-  console.log(list);
 
   list.forEach((el) => {
     const show = makeShowDiv(el);
@@ -16,15 +15,11 @@ export async function renderList() {
 }
 
 const filePath = "../data.json";
-
 const getList = () => {
   return new Promise((resolve) => {
     fetch(filePath)
       .then((r) => r.json())
-      .then((json) => {
-        console.log(json.watchlist);
-        resolve(json.watchlist);
-      });
+      .then((json) => resolve(json.watchlist));
   });
 };
 

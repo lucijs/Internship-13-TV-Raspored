@@ -59,6 +59,7 @@ export function renderTVGuide() {
 
       const showA = document.createElement("a");
       showA.setAttribute("id", show.id);
+      showA.setAttribute("href", "./html/watchList.html");
 
       const showName = document.createElement("h3");
       showName.classList.add("show-title");
