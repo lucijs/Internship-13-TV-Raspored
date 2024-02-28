@@ -2,7 +2,6 @@ import { renderTVGuide } from "./tvGuide.js";
 import { renderList } from "./wacthList.js";
 import { renderScoreList } from "./filterByScore.js";
 import { renderCategoryList } from "./filterByCategory.js";
-import { renderShow } from "./showInfo.js";
 
 const handleFirstPageLoad = () => {
   const pageObserver = new MutationObserver(() => {
@@ -53,9 +52,6 @@ const handlePageReplace = (href, html) => {
       break;
     case "Filter by category":
       renderCategoryList();
-      break;
-    case "Show info":
-      renderShow();
       break;
     default:
       break;

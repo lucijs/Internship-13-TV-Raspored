@@ -1,19 +1,28 @@
 import { formattedTime } from "./helper.js";
+import { makeShowDiv } from "./helper.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const previewData = {};
+  const container = document.getElementById("hover");
   document.querySelectorAll(".tv-guide-grid-row a").forEach((el) => {
     el.addEventListener("mouseover", async () => {
       const previewTooltipEl = el.querySelector(".preview-tooltip");
       if (previewTooltipEl) {
         return;
       }
+
       const id = el.getAttribute("id");
+
+      const show = await getShow(id);
+      const showDiv = makeShowDiv(show);
+      container.appendChild(showDiv);
+
       if (!(el.getAttribute("id") in previewData)) {
         previewData[el.getAttribute("id")] = await getPreviewData(
           el.getAttribute("id")
         );
       }
+
       el.insertAdjacentHTML(
         "afterbegin",
         `<span class="preview-tooltip">
@@ -27,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const previewTooltipEl = el.querySelector(".preview-tooltip");
         if (previewTooltipEl) {
           previewTooltipEl.remove();
+          container.innerHTML = "";
         }
       });
     });
@@ -47,8 +57,16 @@ const getPreviewData = (id) => {
           formattedTime(getShow.endTime);
         resolve(duration);
       })
-      .catch((error) => {
+      .catch(() => {
         resolve("Nema informacija");
       });
+  });
+};
+
+const getShow = (id) => {
+  return new Promise((resolve) => {
+    fetch(filePath)
+      .then((r) => r.json())
+      .then((json) => resolve(json.shows[id - 1]));
   });
 };
