@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     localStorage.setItem("parental-pin", newPin);
+    document.querySelectorAll(".pin input")[1].value = "";
+    document.querySelectorAll(".pin input")[0].value = "";
     alert("Uspješno ste promjenili pin");
   });
 });

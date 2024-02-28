@@ -1,3 +1,5 @@
+import { formattedTime } from "./helper.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const previewData = {};
   document.querySelectorAll(".tv-guide-grid-row a").forEach((el) => {
@@ -50,9 +52,3 @@ const getPreviewData = (id) => {
       });
   });
 };
-
-function formattedTime(time) {
-  const array = time.split("T");
-  const arrayTime = array[1].split(":");
-  return `${arrayTime[0]}:${arrayTime[1]}`;
-}

@@ -549,7 +549,41 @@
     "dokumentarni program",
     "program za odrasle"
   ],
-  "watchlist": [],
+  "watchlist": [
+    {
+      "id": 1,
+      "name": "Potjera",
+      "startTime": "2024-02-28T18:17:00Z",
+      "endTime": "2024-02-28T19:00:00Z",
+      "description": "U 'Potjeri' četiri natjecatelja odgovaraju na pitanja općeg znanja i istovremeno grade taktiku koja će ih dovesti do finalnog kruga. Međutim, na putu im stoji Lovac. Taj će (ne)uobičajeni protivnik u uzbudljivoj igri znanja i brzine pokušati natjecatelje, jednog po jednog, izbaciti iz igre i onemogućiti ih da osvoje desetke tisuća kuna.",
+      "category": "zabavan program",
+      "isReplay": false,
+      "score": 5,
+      "img": "https://mojtv.hr/thumb.ashx?path=/images/846c5f56-60a0-412c-9106-f3fe0c7697cb.jpg&w=163&h=80"
+    },
+    {
+      "id": 8,
+      "name": "Putin: Ruska špijunska priča",
+      "startTime": "2024-02-28T23:45:00Z",
+      "endTime": "2024-02-29T01:41:00Z",
+      "description": "U drugoj epizodi dokumentarne serije vidjet ćemo kako je Vladimir Putin stigao u Kremlj kao ranjivi i nepoznati predsjednik kojega su ruski oligarsi htjeli kontrolirati. Otkrit ćemo kako je učvrstio svoju moć te se na kraju okružio kolegama iz KGB-a.",
+      "category": "dokumentarni program",
+      "isReplay": true,
+      "score": "undefined",
+      "img": "https://mojtv.hr/thumb.ashx?path=/images/2022-03/19a598ff-7868-4b54-9de5-8f52d2.jpg&w=163&h=80"
+    },
+    {
+      "id": 27,
+      "name": "21 Jump street",
+      "startTime": "2024-02-29T00:12:00Z",
+      "endTime": "2024-02-29T1:54:00Z",
+      "description": "Odred mladolikih policajaca ubačen je u srednju školu kako bi stali na kraj moćnom dileru.",
+      "category": "film",
+      "isReplay": false,
+      "score": 4,
+      "img": "https://mojtv.hr/thumb.ashx?path=/images/93ebe664-27f5-4eb8-87a5-032b7f6fb419.jpg&w=163&h=80"
+    }
+  ],
   "pin": "12345678",
   "shows": [
     {
@@ -561,7 +595,7 @@
       "category": "zabavan program",
       "isReplay": false,
       "score": 5,
-      "img": "https://mojtv.hr/thumb.ashx?path=/images/846c5f56-60a0-412c-9106-f3fe0c7697cb.jpg&w=491&h=250"
+      "img": "https://mojtv.hr/thumb.ashx?path=/images/846c5f56-60a0-412c-9106-f3fe0c7697cb.jpg&w=163&h=80"
     },
     {
       "id": 2,

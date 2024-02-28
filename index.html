@@ -8,35 +8,46 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <header>
-      <h2>TV Raspored</h2>
-    </header>
+    <div id="root">
+      <header>
+        <h2>TV Raspored</h2>
+      </header>
 
-    <section id="tv-guide">
-      <div id="tv-guide-program-names"></div>
-      <div id="tv-guide-grid">
-        <div id="time-line"></div>
+      <section id="tv-guide">
+        <div id="tv-guide-program-names"></div>
+        <div id="tv-guide-grid">
+          <div id="time-line"></div>
 
-        <div id="line"></div>
-      </div>
-    </section>
+          <div id="line"></div>
+        </div>
+      </section>
 
-    <section class="buttons">
-      <button>Filtriraj po kategorijama</button>
-      <form class="pin">
-        <button id="pin">Promjeni pin</button>
-        <input type="password" placeholder="stari pin"  />
-        <input type="password" placeholder="novi pin" />
-      </form>
-      <button>Watch lista</button>
-      <button>Filtriraj po ocjenama</button>
-    </section>
+      <section class="buttons">
+        <button>Filtriraj po kategorijama</button>
+        <form class="pin">
+          <button id="pin">Promjeni pin</button>
+          <input
+            type="password"
+            placeholder="stari pin"
+            autocomplete="old-password" />
+          <input
+            type="password"
+            placeholder="novi pin"
+            autocomplete="old-password" />
+        </form>
+        <a href="./html/watchList.html"><button>Watch lista</button></a>
+        <a href="./html/filterByScore.html"
+          ><button>Filtriraj po ocjenama</button></a
+        >
+      </section>
 
-    <section class="hover"></section>
+      <section class="hover"></section>
+    </div>
 
-    <script src="./script/tvGuide.js" type="module"></script>
     <script src="./script/hover.js" type="module"></script>
     <script src="./script/watchedProgram.js" type="module"></script>
     <script src="./script/changePin.js" type="module"></script>
+    <script src="./script/navigation.js" type="module"></script>
+    <script src="./script/tvGuide.js" type="module"></script>
   </body>
 </html>

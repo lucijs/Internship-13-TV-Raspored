@@ -8,6 +8,7 @@
 header {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 header h2 {
@@ -89,7 +90,7 @@ header h2 {
   width: 3px;
   height: 126px;
   z-index: 999;
-  background: #df4f97;
+  background: #dbaac2;
 }
 
 #time-line {
@@ -109,6 +110,7 @@ header h2 {
   font-weight: 400;
   line-height: 14px;
   letter-spacing: 0.14px;
+  color: #dbaac2;
 }
 
 button {
@@ -173,6 +175,10 @@ button:hover {
 
 .currently-on {
   color: #eb9bc3;
+}
+
+a {
+  text-decoration: none;
 }
 
 .pin {

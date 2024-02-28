@@ -1,20 +1,6 @@
 import { data } from "./data.js";
-
-function getCurrentMinutes() {
-  const currentTime = new Date();
-  const currentHour = currentTime.getHours();
-  const currentMinute = currentTime.getMinutes();
-  return currentHour * 60 + currentMinute;
-}
-
-function getCurrentTime() {
-  const currentTime = new Date();
-  const hours = currentTime.getHours();
-  const minutes = currentTime.getMinutes();
-  return `${hours < 10 ? "0" : ""}${hours}:${
-    minutes < 10 ? "0" : ""
-  }${minutes}`;
-}
+import { getCurrentMinutes } from "./helper.js";
+import { getCurrentTime } from "./helper.js";
 
 function updateTimeLine() {
   const timeLine = document.getElementById("time-line");
@@ -46,7 +32,7 @@ function updateTimeLine() {
   timeLine.appendChild(time);
 }
 
-function renderTVGuide() {
+export function renderTVGuide() {
   if (window.innerWidth < 1000) {
     mobileVersion();
     return;
@@ -91,6 +77,7 @@ function renderTVGuide() {
 
       //da kasnije mogu provjerit je li pin jednak početnom
       localStorage.setItem("parental-pin", data.pin);
+      localStorage.setItem("watch-later", data.watchlist);
     });
 
     updateTimeLine();
