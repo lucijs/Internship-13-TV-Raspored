@@ -20,8 +20,14 @@ function updateLinePosition() {
   const tvGuide = document.getElementById("tv-guide-grid");
   const verticalLine = document.getElementById("line");
   const totalCurrentMinutes = getCurrentMinutes();
-  tvGuide.scrollLeft = totalCurrentMinutes * 4;
-  verticalLine.style.left = (totalCurrentMinutes - 60) * 4.5 + "px";
+
+  if (totalCurrentMinutes < 600) {
+    tvGuide.scrollLeft = (totalCurrentMinutes + 24 * 60) * 4;
+    verticalLine.style.left = (totalCurrentMinutes + 24 * 60) * 4.5 + "px";
+  } else {
+    tvGuide.scrollLeft = totalCurrentMinutes * 4;
+    verticalLine.style.left = (totalCurrentMinutes - 60) * 4.5 + "px";
+  }
 }
 
 function updateTimeLine() {
@@ -31,7 +37,13 @@ function updateTimeLine() {
   const t = document.createElement("h3");
   t.textContent = getCurrentTime();
   time.appendChild(t);
-  time.style.left = `${getCurrentMinutes() / 2 - 170}px`;
+  const totalCurrentMinutes = getCurrentMinutes();
+
+  if (totalCurrentMinutes < 600) {
+    time.style.left = (totalCurrentMinutes + 24 * 60) * 4.5 - 18 + "px";
+  } else {
+    time.style.left = `${totalCurrentMinutes / 2 - 170}px`;
+  }
   timeLine.appendChild(time);
 }
 
@@ -53,9 +65,11 @@ function renderTVGuide() {
 
     channel.broadcasted.forEach((show) => {
       const showDiv = document.createElement("div");
+      const showA = document.createElement("a");
       const duration = (show.endTime - show.startTime) / (1000 * 60);
       const width = duration * 4.5;
       showDiv.style.width = width + "px";
+      showA.setAttribute("id", show.id);
       const showName = document.createElement("h3");
       showName.classList.add("show-title");
 
@@ -63,7 +77,8 @@ function renderTVGuide() {
       else showName.textContent = show.name + " (R)";
 
       showDiv.appendChild(showName);
-      gridRow.appendChild(showDiv);
+      showA.appendChild(showDiv);
+      gridRow.appendChild(showA);
     });
     updateLinePosition();
     showsGrid.appendChild(gridRow);

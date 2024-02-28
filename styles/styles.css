@@ -1,8 +1,8 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  background-color: var(--black, rgb(91, 86, 86));
-  color: var(--white, #f5f5f7);
+  background-color: rgb(91, 86, 86);
+  color: white;
 }
 
 header {
@@ -33,6 +33,7 @@ header h2 {
   width: 95px;
   height: 32px;
   gap: 2px;
+  margin-top: 60px;
   align-items: center;
 }
 
@@ -49,6 +50,7 @@ header h2 {
   position: relative;
   display: grid;
   overflow-x: scroll;
+  overflow-y: visible;
   margin-left: 105px;
 }
 
@@ -83,9 +85,9 @@ header h2 {
 
 #line {
   position: absolute;
-  top: 1px;
+  top: 61px;
   width: 3px;
-  height: 255px;
+  height: 126px;
   z-index: 999;
   background: #df4f97;
 }
@@ -101,9 +103,17 @@ header h2 {
   top: -22px;
 }
 
+#time-line h3 {
+  font-family: "Fuse V.2 Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.14px;
+}
+
 button {
   height: 44px;
-  color: var(--white);
+  color: white;
   cursor: pointer;
   font-size: 16px;
   display: flex;
@@ -120,34 +130,39 @@ button {
   padding: 14px 32px;
   font-style: normal;
   border-style: solid;
-  border-image-source: linear-gradient(
-    125deg,
-    #0d8ed3 5.44%,
-    #0b60bb 17.95%,
-    #0a3aa7 36.44%,
-    #6a387d 69.53%,
-    #c53754 105.59%,
-    #fa5240 117.57%
-  );
-  border-image-slice: 1;
-  border-color: transparent;
+  border-color: #9c9696;
+  background-color: 1px solid rgb(91, 86, 86);
 }
 
-button:hover {
-  border-width: 1px;
-  border-style: solid;
-  border-image-source: linear-gradient(
-    94.69deg,
-    #37f3e1 -5.42%,
-    #a109ff 117.51%
-  );
-  background-color: var(--white);
-  color: var(--black);
-  border-image-slice: 1;
-  border-image-repeat: stretch;
-  border-color: transparent;
-  animation-timing-function: ease-out;
-  animation-duration: 300ms;
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.preview-tooltip {
+  position: absolute;
+  display: inline-block;
+  justify-content: space-between;
+  left: inherit;
+  color: #000;
+  background-color: #fff;
+  border: 1px dotted black;
+  z-index: 999;
+  font-size: 16px;
+  width: 550px;
+  height: 448px;
+  overflow: visible;
+}
+
+.preview-tooltip span {
+  padding: 4px 8px;
+}
+
+.preview-tooltip img {
+  object-fit: cover;
+  aspect-ratio: 1;
 }
 
 @media screen and (max-width: 1000px) {
