@@ -88,6 +88,9 @@ function renderTVGuide() {
       showDiv.appendChild(showName);
       showA.appendChild(showDiv);
       gridRow.appendChild(showA);
+
+      //da kasnije mogu provjerit je li pin jednak početnom
+      localStorage.setItem("parental-pin", data.pin);
     });
 
     updateTimeLine();
